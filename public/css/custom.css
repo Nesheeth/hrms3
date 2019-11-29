@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css?family=Quattrocento&display=swap');
+
+/*progress pace*/
+.pace .pace-progress{background: #244a95 !important;}
+.pace .pace-activity {border-top-color: #244a95;border-left-color: #244a95;margin-top: 60px;}
+
+/*login page*/
+.hrms-inner {display: block;height: 100vh; width: 100%;flex-direction: column; background: #fff;}
+.hrms-two-pane {height: 100%;display: flex;flex-direction: row-reverse;}
+.logobox{display: block; background: url(http://dhrms.projects-codingbrains.com/images/login-bg.jpg);
+flex: 1; max-width:50%;background-repeat: no-repeat;background-size: cover;}
+.hrms-two-pane .login-box{display: flex;align-items: center;background: white; width: 400px; max-width: 100%;}
+.hrms-inner .page-inner{padding:0 !important; min-height: 100% !important;}
+.hrms-inner .login-box .logo-name{display: inline-block; font-size: 52px;font-family: 'Quattrocento', serif; text-align: left;
+color: #044a95;}
+.login-box p.text-center.m-t-md {font-size: 26px;font-weight: 600;letter-spacing: 0.47px;color: #222;text-align: left;
+margin-bottom: 15px;}
+.login-box span{display: block; text-align: left;font-size: 16px;color: #555;letter-spacing: 0.47px; margin-bottom: 50px;}
+.form-control {background: #f5f5f5;border: 1px solid #f5f5f5; font-size: 14px;height: 40px;}
+.newgrp{display: table; width: 100%; margin: 20px 0;}
+.newgrp a{margin-top: 0; position: relative; text-align: right; right: -15px; font-size: 14px; font-weight: 500;}
+.login-box .btn-success, .login-box .btn-success:active, .login-box .btn-success:focus{color: #fff;background-color: #044a95;
+border-color: transparent;height: 40px; font-size: 15px;}
+.login-box .btn-primary, .login-box .btn-primary:active, .login-box .btn-primary:focus{color: #fff;background-color: #044a95;border-color: transparent;
+height: 40px; font-size: 15px;}
+.login-box .btn-primary:hover, .login-box .btn-success:hover{background-color: #333333 !important;}
+.logobox .overlay{width: 100%;height: 100vh;background: rgba(0, 0, 0, 0.7);position: relative;display: flex; align-items: center;}
+.logobox .overlay img{width: 300px;margin: 0 auto;}
+.custom-control {position: relative;display: block;min-height: 1.5rem;margin-left: 1.5rem;}
+.custom-control input[type=checkbox] {box-sizing: border-box;padding: 0;}
+.custom-control-input {position: absolute;z-index: -1;opacity: 0;}
+.custom-control-label {position: relative;margin-bottom: 0; vertical-align: top;display: inline-block;font-size: 14px;}
+.custom-checkbox .custom-control-label::before {border-radius: .25rem;
+transition: background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;position: absolute; top: .25rem;left: -25px;
+display: block;width: 15px; height: 15px;pointer-events: none; content: "";background-color: #fff;border: #adb5bd solid 1px;}
+.custom-control-label:after {position: absolute;top: 4px;left: -24px;display: block;width: 15px;height: 15px;
+ content: "";background: no-repeat 50%/50% 50%;}
+.custom-control-input:checked ~ .custom-control-label::before {color: #fff; border-color: #044a95;background-color: #044a95;}
+.custom-control-input:checked ~ .custom-control-label::after {font: normal normal normal 12px/1 FontAwesome;content: '\f00c';
+color: #fff;}
+.loginsec p.m-t-xs{font-size: 15px;font-weight: 500;margin: 20px 0;}
+.loginsec .label-danger {background: transparent !important;color: red;font-size: 12px;line-height: normal;font-style: italic;margin-bottom: 0;}
+/*login page ends*/
+
+/* forget password*/
+.forgetpswrdbox p.text-center.m-t-md {font-size: 16px;font-weight: 600;letter-spacing: 0.47px;color: #222;text-align: left;margin-bottom: 15px;}
+.forgetpswrdbox .alrt-scss {background: #d6ffd6;border: 1px solid #008000;color: #008000;text-align: center;border-radius: 5px;font-weight: 500;}
+.forgetpswrdbox .alrt-failed {background: #ffd9d9;border: 1px solid #ff0000;color: #ff0000;text-align: center;border-radius: 5px;font-weight: 500;}
+
+
+
+/* responsive css */
+@media (max-width: 900px){
+	.hrms-two-pane {flex-direction: column-reverse;}
+	.hrms-two-pane .login-box {width: 80% !important;max-width: 400px;min-height: calc(100vh - 150px);}
+	.logobox {max-width: 100%;display: flex;height: 150px;}
+	.logobox .overlay {height: 100%;}
+	.logobox .overlay img {width: 60%;max-width: 200px;}
+	.hrms-inner .login-box .logo-name {margin: 0 auto;display: table;}
+	.hrms-inner {height: auto;}
+	.loginsec {width: 100%;display: block;}
+}
